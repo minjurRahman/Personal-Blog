@@ -88,6 +88,10 @@ body{
         font-size: 4rem;
     }
 
+    #menu-icon{
+        display: none;
+    }
+
     nav li{
         display: inline-block;
         margin-right: 2rem;
@@ -426,6 +430,14 @@ body{
         }
         header{
             flex-direction: column;
+        }
+        #menu-icon{
+            display: block;
+            margin-top: 1.5rem;
+            cursor: pointer;
+        }
+        .hidden{
+            display: none;
         }
         nav ul{
             padding-left: 2.5rem;
