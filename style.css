@@ -150,6 +150,7 @@ body{
     width: 50rem;
     height: 50rem;
     border: 0.3rem solid black;
+    border-radius: 0.6rem;
 }
 
 /* Banner Section Ends */
@@ -203,10 +204,6 @@ body{
 
 /* Archives Starts  */ 
 
-    #archive{
-
-    }
-
     .archives-container{
         display: flex;
         justify-content: space-evenly;
@@ -240,8 +237,6 @@ body{
 
 /* Blog-Posts Starts */
 
-    #blog-posts{
-    }
     .blog-posts-heading{
         margin-bottom: 5rem;
     }
@@ -302,6 +297,7 @@ body{
 
     #contact-section{
         background-color: #4c4c4c;
+        min-height: 90vh;
     }
     #contact-form{
         padding: 1rem;
@@ -350,7 +346,31 @@ body{
 /* Contact Ends */
 
 
+/* Footer Starts */
+
+    footer{
+        background-color: black;
+        padding: 1rem;
+        min-height: 5vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .copyright-text{
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    .footer-icon{
+        font-size: 2.5rem;
+    }
+
+/* Footer Ends */
+
+
 /* Responsive Starts Here */
+
     @media (max-width: 992px){
         #blog-banner-section{
             flex-direction: column;
@@ -399,8 +419,6 @@ body{
         }
 
     }
-
-
 
     @media (max-width: 600px){
         html{
@@ -457,16 +475,22 @@ body{
             flex-direction: column;
         }
 
+        input, textarea{
+            max-width: 100%;
+        }
+
         .form-control label{
             margin-bottom: 0.5rem;
         }
+   
+        footer{
+            flex-direction: column;
+        }
 
-    }
+        #menubar2{
+            display: flex;
+        }
 
-
-
-    @media (max-width: 400px){
-        
     }
 
 /* Responsive Ends Here */
